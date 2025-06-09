@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		EEE020712DF706830026F8E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEE020522DF706810026F8E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EEE020592DF706810026F8E0;
+			remoteInfo = IdealistaiOSChanllenge;
+		};
+		EEE0207B2DF706830026F8E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEE020522DF706810026F8E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EEE020592DF706810026F8E0;
+			remoteInfo = IdealistaiOSChanllenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EEE0205A2DF706810026F8E0 /* IdealistaiOSChanllenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IdealistaiOSChanllenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEE020702DF706830026F8E0 /* IdealistaiOSChanllengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IdealistaiOSChanllengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEE0207A2DF706830026F8E0 /* IdealistaiOSChanllengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IdealistaiOSChanllengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		EEE020822DF706830026F8E0 /* Exceptions for "IdealistaiOSChanllenge" folder in "IdealistaiOSChanllenge" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = EEE020592DF706810026F8E0 /* IdealistaiOSChanllenge */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		EEE0205C2DF706810026F8E0 /* IdealistaiOSChanllenge */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				EEE020822DF706830026F8E0 /* Exceptions for "IdealistaiOSChanllenge" folder in "IdealistaiOSChanllenge" target */,
+			);
+			path = IdealistaiOSChanllenge;
+			sourceTree = "<group>";
+		};
+		EEE020732DF706830026F8E0 /* IdealistaiOSChanllengeTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = IdealistaiOSChanllengeTests;
+			sourceTree = "<group>";
+		};
+		EEE0207D2DF706830026F8E0 /* IdealistaiOSChanllengeUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = IdealistaiOSChanllengeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EEE020572DF706810026F8E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEE0206D2DF706830026F8E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEE020772DF706830026F8E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EEE020512DF706810026F8E0 = {
+			isa = PBXGroup;
+			children = (
+				EEE0205C2DF706810026F8E0 /* IdealistaiOSChanllenge */,
+				EEE020732DF706830026F8E0 /* IdealistaiOSChanllengeTests */,
+				EEE0207D2DF706830026F8E0 /* IdealistaiOSChanllengeUITests */,
+				EEE0205B2DF706810026F8E0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EEE0205B2DF706810026F8E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EEE0205A2DF706810026F8E0 /* IdealistaiOSChanllenge.app */,
+				EEE020702DF706830026F8E0 /* IdealistaiOSChanllengeTests.xctest */,
+				EEE0207A2DF706830026F8E0 /* IdealistaiOSChanllengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EEE020592DF706810026F8E0 /* IdealistaiOSChanllenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEE020832DF706830026F8E0 /* Build configuration list for PBXNativeTarget "IdealistaiOSChanllenge" */;
+			buildPhases = (
+				EEE020562DF706810026F8E0 /* Sources */,
+				EEE020572DF706810026F8E0 /* Frameworks */,
+				EEE020582DF706810026F8E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				EEE0205C2DF706810026F8E0 /* IdealistaiOSChanllenge */,
+			);
+			name = IdealistaiOSChanllenge;
+			packageProductDependencies = (
+			);
+			productName = IdealistaiOSChanllenge;
+			productReference = EEE0205A2DF706810026F8E0 /* IdealistaiOSChanllenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EEE0206F2DF706830026F8E0 /* IdealistaiOSChanllengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEE020882DF706830026F8E0 /* Build configuration list for PBXNativeTarget "IdealistaiOSChanllengeTests" */;
+			buildPhases = (
+				EEE0206C2DF706830026F8E0 /* Sources */,
+				EEE0206D2DF706830026F8E0 /* Frameworks */,
+				EEE0206E2DF706830026F8E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EEE020722DF706830026F8E0 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				EEE020732DF706830026F8E0 /* IdealistaiOSChanllengeTests */,
+			);
+			name = IdealistaiOSChanllengeTests;
+			packageProductDependencies = (
+			);
+			productName = IdealistaiOSChanllengeTests;
+			productReference = EEE020702DF706830026F8E0 /* IdealistaiOSChanllengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EEE020792DF706830026F8E0 /* IdealistaiOSChanllengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEE0208B2DF706830026F8E0 /* Build configuration list for PBXNativeTarget "IdealistaiOSChanllengeUITests" */;
+			buildPhases = (
+				EEE020762DF706830026F8E0 /* Sources */,
+				EEE020772DF706830026F8E0 /* Frameworks */,
+				EEE020782DF706830026F8E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EEE0207C2DF706830026F8E0 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				EEE0207D2DF706830026F8E0 /* IdealistaiOSChanllengeUITests */,
+			);
+			name = IdealistaiOSChanllengeUITests;
+			packageProductDependencies = (
+			);
+			productName = IdealistaiOSChanllengeUITests;
+			productReference = EEE0207A2DF706830026F8E0 /* IdealistaiOSChanllengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EEE020522DF706810026F8E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					EEE020592DF706810026F8E0 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					EEE0206F2DF706830026F8E0 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = EEE020592DF706810026F8E0;
+					};
+					EEE020792DF706830026F8E0 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = EEE020592DF706810026F8E0;
+					};
+				};
+			};
+			buildConfigurationList = EEE020552DF706810026F8E0 /* Build configuration list for PBXProject "IdealistaiOSChanllenge" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EEE020512DF706810026F8E0;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = EEE0205B2DF706810026F8E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EEE020592DF706810026F8E0 /* IdealistaiOSChanllenge */,
+				EEE0206F2DF706830026F8E0 /* IdealistaiOSChanllengeTests */,
+				EEE020792DF706830026F8E0 /* IdealistaiOSChanllengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EEE020582DF706810026F8E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEE0206E2DF706830026F8E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEE020782DF706830026F8E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EEE020562DF706810026F8E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEE0206C2DF706830026F8E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEE020762DF706830026F8E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EEE020722DF706830026F8E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EEE020592DF706810026F8E0 /* IdealistaiOSChanllenge */;
+			targetProxy = EEE020712DF706830026F8E0 /* PBXContainerItemProxy */;
+		};
+		EEE0207C2DF706830026F8E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EEE020592DF706810026F8E0 /* IdealistaiOSChanllenge */;
+			targetProxy = EEE0207B2DF706830026F8E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EEE020842DF706830026F8E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IdealistaiOSChanllenge/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = anna.IdealistaiOSChanllenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EEE020852DF706830026F8E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IdealistaiOSChanllenge/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = anna.IdealistaiOSChanllenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EEE020862DF706830026F8E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EEE020872DF706830026F8E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EEE020892DF706830026F8E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = anna.IdealistaiOSChanllengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IdealistaiOSChanllenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/IdealistaiOSChanllenge";
+			};
+			name = Debug;
+		};
+		EEE0208A2DF706830026F8E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = anna.IdealistaiOSChanllengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IdealistaiOSChanllenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/IdealistaiOSChanllenge";
+			};
+			name = Release;
+		};
+		EEE0208C2DF706830026F8E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = anna.IdealistaiOSChanllengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IdealistaiOSChanllenge;
+			};
+			name = Debug;
+		};
+		EEE0208D2DF706830026F8E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = anna.IdealistaiOSChanllengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IdealistaiOSChanllenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EEE020552DF706810026F8E0 /* Build configuration list for PBXProject "IdealistaiOSChanllenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEE020862DF706830026F8E0 /* Debug */,
+				EEE020872DF706830026F8E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEE020832DF706830026F8E0 /* Build configuration list for PBXNativeTarget "IdealistaiOSChanllenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEE020842DF706830026F8E0 /* Debug */,
+				EEE020852DF706830026F8E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEE020882DF706830026F8E0 /* Build configuration list for PBXNativeTarget "IdealistaiOSChanllengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEE020892DF706830026F8E0 /* Debug */,
+				EEE0208A2DF706830026F8E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEE0208B2DF706830026F8E0 /* Build configuration list for PBXNativeTarget "IdealistaiOSChanllengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEE0208C2DF706830026F8E0 /* Debug */,
+				EEE0208D2DF706830026F8E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EEE020522DF706810026F8E0 /* Project object */;
+}
