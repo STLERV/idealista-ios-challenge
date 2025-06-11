@@ -13,7 +13,6 @@ struct AdsListsDTO: Decodable {
 struct AdDTO: Decodable {
     let propertyCode: String
     let thumbnail: URL
-    let floor: String?
     let price: Double
     let propertyType: String
     let operation: String

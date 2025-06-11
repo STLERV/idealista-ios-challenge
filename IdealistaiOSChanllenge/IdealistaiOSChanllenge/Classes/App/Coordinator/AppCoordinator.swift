@@ -37,7 +37,7 @@ class AppCoordinator: Coordinator {
     }
 
     func showHome() {
-        let coordinator = AdsListCoordinator()
+        let coordinator = AdsListCoordinator(navigationController: navigationController)
         let interactor = AdsListInteractor()
         let presenter = AdsListPresenter(interactor: interactor)
         let view = AdsListViewController(presenter: presenter)
