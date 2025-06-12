@@ -13,7 +13,7 @@
 import SwiftUI
 import MapKit
 
-struct MapaConPuntoView: View {
+struct MapPointView: View {
     let coordinate: CLLocationCoordinate2D
 
     var body: some View {

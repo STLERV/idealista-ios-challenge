@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -12,70 +11,66 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AdTableViewCell" customModule="IdealistaiOSChanllenge" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="393" height="222"/>
+            <rect key="frame" x="0.0" y="0.0" width="393" height="196"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adress" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBb-by-aSb">
-                    <rect key="frame" x="62.333333333333343" y="22.333333333333336" width="52.666666666666657" height="20.333333333333336"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GCl-hW-ask">
-                    <rect key="frame" x="15.999999999999998" y="16.000000000000004" width="30.333333333333321" height="33.333333333333343"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="NG1-oo-UwG">
-                    <rect key="frame" x="0.0" y="63.333333333333343" width="220" height="150"/>
+                    <rect key="frame" x="16" y="8" width="200" height="180"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="150" id="eJ2-wG-2Sw"/>
-                        <constraint firstAttribute="width" constant="220" id="w5k-hJ-DVf"/>
+                        <constraint firstAttribute="width" constant="200" id="IEL-6u-WgB"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="180" id="RtK-g2-GSk"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="751" text="price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IUY-Cb-wea">
-                    <rect key="frame" x="226" y="143.66666666666666" width="157" height="20.333333333333343"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m0e-gd-Yks">
-                    <rect key="frame" x="226" y="86" width="157" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="8kf-Lc-4Gl">
+                    <rect key="frame" x="224" y="24" width="153" height="130"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GCl-hW-ask">
+                            <rect key="frame" x="0.0" y="0.0" width="153" height="20.333333333333332"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adress" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBb-by-aSb">
+                            <rect key="frame" x="0.0" y="32.333333333333336" width="153" height="20.333333333333336"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m0e-gd-Yks">
+                            <rect key="frame" x="0.0" y="64.666666666666671" width="153" height="20.333333333333329"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="249" verticalCompressionResistancePriority="751" text="price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IUY-Cb-wea">
+                            <rect key="frame" x="0.0" y="97" width="153" height="33"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemRedColor"/>
             <constraints>
-                <constraint firstItem="IUY-Cb-wea" firstAttribute="leading" secondItem="NG1-oo-UwG" secondAttribute="trailing" constant="6" id="1CJ-Bm-7uh"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="IUY-Cb-wea" secondAttribute="trailing" constant="10" id="7Zh-Q6-DZR"/>
-                <constraint firstItem="GCl-hW-ask" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="8rt-bL-1qV"/>
-                <constraint firstItem="NG1-oo-UwG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="CZy-FS-hb1"/>
-                <constraint firstItem="GCl-hW-ask" firstAttribute="centerY" secondItem="SBb-by-aSb" secondAttribute="centerY" id="Tgp-xk-tjR"/>
-                <constraint firstItem="NG1-oo-UwG" firstAttribute="top" secondItem="GCl-hW-ask" secondAttribute="bottom" constant="14" id="UCG-AW-E5S"/>
-                <constraint firstItem="SBb-by-aSb" firstAttribute="leading" secondItem="GCl-hW-ask" secondAttribute="trailing" constant="16" id="UGU-cS-Lw6"/>
-                <constraint firstItem="IUY-Cb-wea" firstAttribute="top" secondItem="m0e-gd-Yks" secondAttribute="bottom" constant="36.670000000000002" id="aY6-fa-IUe"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="IUY-Cb-wea" secondAttribute="bottom" constant="24" id="b3Q-01-nIw"/>
-                <constraint firstItem="IUY-Cb-wea" firstAttribute="top" secondItem="m0e-gd-Yks" secondAttribute="bottom" constant="36.670000000000002" id="cZR-y6-LOm"/>
-                <constraint firstItem="m0e-gd-Yks" firstAttribute="leading" secondItem="NG1-oo-UwG" secondAttribute="trailing" constant="6" id="dkY-bQ-k0z"/>
-                <constraint firstAttribute="bottom" secondItem="NG1-oo-UwG" secondAttribute="bottom" constant="8.6699999999999999" id="gHl-Nk-GoG"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="IUY-Cb-wea" secondAttribute="bottom" constant="24" id="kFQ-S0-UqP"/>
-                <constraint firstItem="GCl-hW-ask" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="lWB-N9-mYx"/>
-                <constraint firstItem="m0e-gd-Yks" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="27" id="oT7-Ad-yBo"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="m0e-gd-Yks" secondAttribute="trailing" constant="10" id="vys-yV-dZO"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="8kf-Lc-4Gl" secondAttribute="bottom" constant="8" id="0ay-88-eaN"/>
+                <constraint firstItem="8kf-Lc-4Gl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="24" id="1CM-pg-axM"/>
+                <constraint firstItem="8kf-Lc-4Gl" firstAttribute="leading" secondItem="NG1-oo-UwG" secondAttribute="trailing" constant="8" id="WcZ-Cw-6E5"/>
+                <constraint firstAttribute="bottom" secondItem="NG1-oo-UwG" secondAttribute="bottom" constant="8" id="Xfz-21-2bN"/>
+                <constraint firstItem="NG1-oo-UwG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="idz-q2-vi6"/>
+                <constraint firstItem="NG1-oo-UwG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="jR7-pT-F1p"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="8kf-Lc-4Gl" secondAttribute="trailing" constant="16" id="vu1-Y5-z4x"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="cellImage" destination="NG1-oo-UwG" id="0DV-9h-zbo"/>
-                <outlet property="cellTitle" destination="SBb-by-aSb" id="gSf-pY-ZQp"/>
-                <outlet property="city" destination="GCl-hW-ask" id="u1e-kc-50m"/>
-                <outlet property="price" destination="IUY-Cb-wea" id="Ybo-xC-jwv"/>
-                <outlet property="type" destination="m0e-gd-Yks" id="sgz-Yh-YMC"/>
+                <outlet property="cellAdress" destination="SBb-by-aSb" id="BOm-Ea-6Vs"/>
+                <outlet property="cellCity" destination="GCl-hW-ask" id="cGR-wa-4aN"/>
+                <outlet property="cellImage" destination="NG1-oo-UwG" id="ySQ-wj-t34"/>
+                <outlet property="cellPrice" destination="IUY-Cb-wea" id="3i2-DT-2fS"/>
+                <outlet property="cellType" destination="m0e-gd-Yks" id="Ghc-dz-18R"/>
             </connections>
-            <point key="canvasLocation" x="32.824427480916029" y="-121.83098591549296"/>
+            <point key="canvasLocation" x="32.824427480916029" y="-107.74647887323944"/>
         </view>
     </objects>
     <resources>

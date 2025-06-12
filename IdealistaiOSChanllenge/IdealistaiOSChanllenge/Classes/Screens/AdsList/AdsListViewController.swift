@@ -10,8 +10,6 @@ import UIKit
 
 protocol AdsListViewControllerProtocol  {
     func displayAds(ads: [AdList])
-    func showLoading()
-    func hideLoading()
 }
 
 class AdsListViewController: UIViewController {
@@ -32,28 +30,17 @@ class AdsListViewController: UIViewController {
         viewDidLoadSetUp()
     }
     func viewDidLoadSetUp() {
-        label.text = "Title"
         presenter?.onViewDidLoad()
         configureTableView()
-        print("aeeeaa")
-        
     }
+
     @objc private func didPullToRefresh() {
-         presenter?.onViewDidLoad()
-         refreshControl.endRefreshing()
-        print("aaa")
-     }
+        presenter?.onViewDidLoad()
+        refreshControl.endRefreshing()
+    }
 }
 
 extension AdsListViewController: AdsListViewControllerProtocol {
-    
-    func showLoading() {
-        print("Cargando anuncios...")
-    }
-
-    func hideLoading() {
-        print("Carga finalizada")
-    }
 
     func displayAds(ads: [AdList]) {
         DispatchQueue.main.async{
@@ -63,32 +50,32 @@ extension AdsListViewController: AdsListViewControllerProtocol {
 }
 
 extension AdsListViewController: UITableViewDelegate, UITableViewDataSource {
-    
+
     private func configureTableView() {
-         tableView.delegate = self
-         tableView.dataSource = self
+        tableView.delegate = self
+        tableView.dataSource = self
         tableView.separatorStyle = .singleLine
-         tableView.rowHeight = UITableView.automaticDimension
-         tableView.estimatedRowHeight = 400
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 400
         refreshControl.addTarget(self, action: #selector(didPullToRefresh), for: .valueChanged)
-             tableView.refreshControl = refreshControl
-         let adListCell = UINib(nibName: AdTableViewCell.identifier,
-                                             bundle: nil)
-         tableView.register(adListCell,
-                            forCellReuseIdentifier: AdTableViewCell.identifier)
-     }
+        tableView.refreshControl = refreshControl
+        let adListCell = UINib(nibName: AdTableViewCell.identifier,
+                               bundle: nil)
+        tableView.register(adListCell,
+                           forCellReuseIdentifier: AdTableViewCell.identifier)
+    }
 
     private func dequeueCell(for tableView: UITableView, indexPath: IndexPath, identifier: String) -> UITableViewCell {
         return tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath)
     }
-    
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let rows = presenter?.getAdsCount() else {
             return 0
         }
         return rows
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let item = tableView.dequeueReusableCell(withIdentifier: AdTableViewCell.identifier,
                                                        for:indexPath) as? AdTableViewCell else {
@@ -97,17 +84,16 @@ extension AdsListViewController: UITableViewDelegate, UITableViewDataSource {
         guard let cellIndex = presenter?.getAd(index: indexPath.row)  else {
             return UITableViewCell()
         }
-        //TODO: pasar a la celda
-        item.cellTitle.text = "-  " + cellIndex.address
-        item.city.text = cellIndex.city
-        item.type.text = cellIndex.propertyType
-        item.price.text = String(cellIndex.price) + " €"
-        item.cellImage.loadImage(from: cellIndex.thumbnailURL)
+        item.setCell(adress: cellIndex.address,
+                     image:  cellIndex.thumbnailURL,
+                     price: cellIndex.price,
+                     type: cellIndex.propertyType,
+                     city: cellIndex.city)
         return item
     }
-
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
+        
         if let adID = presenter?.getAd(index: indexPath.row).id {
             delegate?.showAdDetail(index: adID)
         }

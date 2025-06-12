@@ -15,16 +15,15 @@ protocol AdsListCoordinatorProtocol {
 
 class AdsListCoordinator: AdsListCoordinatorProtocol {
     var navigationController: UINavigationController
-    
+
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
 
     func showAdDetail(index: String) {
         let viewModel = AdDetailViewModel(adId: index)
-         let detailView = AdDetailView(viewModel: viewModel)
-         let hostingController = UIHostingController(rootView: detailView)
+        let detailView = AdDetailView(viewModel: viewModel)
+        let hostingController = UIHostingController(rootView: detailView)
         navigationController.pushViewController(hostingController, animated: true)
-     }
+    }
 }
-

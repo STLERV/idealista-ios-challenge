@@ -21,7 +21,7 @@ struct AdDetailView: View {
                     VStack(spacing: 16) {
                         ImageCarouselView(imageUrls: property.images)
                             .cornerRadius(12)
-                            .shadow(radius: 4)
+                            .shadow(radius: 2)
 
                         HStack(alignment: .top, spacing: 16) {
                             VStack(alignment: .leading, spacing: 8) {
@@ -33,7 +33,7 @@ struct AdDetailView: View {
                                     .font(.headline)
                                     .foregroundColor(.primary)
 
-                                VStack(alignment: .leading, spacing: 4) {
+                                VStack(alignment: .leading, spacing: 2) {
                                     Text(String(format: "rooms".localized, property.bedrooms))
                                     Text(String(format: "bathrooms".localized, property.bathrooms))
                                     Text(String(format: "area".localized, property.area))
@@ -43,13 +43,14 @@ struct AdDetailView: View {
                                 .font(.subheadline)
                                 .foregroundColor(.secondary)
                             }
+                            
+                            Spacer()
 
-                            MapaConPuntoView(coordinate: property.coordinate)
+                            MapPointView(coordinate: property.coordinate)
                                 .frame(width: 160, height: 160)
-                                .cornerRadius(8)
+                                .cornerRadius(12)
+                                .shadow(radius: 2)
                         }
-
-                        Divider().padding(.vertical, 4)
 
                         HStack(spacing: 8) {
                             Button(action: {
@@ -65,6 +66,8 @@ struct AdDetailView: View {
                                 .font(.headline)
                                 .foregroundColor(.secondary)
                         }
+                        
+                        Divider().padding(.vertical, 4)
 
                         Text(property.description)
                             .font(.caption)
@@ -81,6 +84,5 @@ struct AdDetailView: View {
                 viewModel.getIsFavorite()
             }
         }
-        .background(Color(UIColor.systemGray6))
     }
 }

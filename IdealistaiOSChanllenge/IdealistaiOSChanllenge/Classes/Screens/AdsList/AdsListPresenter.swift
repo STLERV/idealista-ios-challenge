@@ -25,7 +25,6 @@ final class AdsListPresenter: AdsListPresenterProtocol {
 
     func onViewDidLoad() {
         Task {
-            view?.showLoading()
             do {
                 let ads = try await interactor.fetchAds()
                 self.ads = ads
@@ -33,7 +32,6 @@ final class AdsListPresenter: AdsListPresenterProtocol {
             } catch {
                print("ssss")
             }
-            view?.hideLoading()
         }
     }
     

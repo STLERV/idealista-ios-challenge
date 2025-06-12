@@ -21,29 +21,29 @@ protocol FavoritesManaging {
 final class FavoritesManager: FavoritesManaging {
     static let shared = FavoritesManager()
     private let filename = "favorites.json"
-
+    
     private var fileURL: URL {
         guard let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else {
             fatalError("No se pudo obtener el documento directory")
         }
         return documentsURL.appendingPathComponent(filename)
     }
-
+    
     private func loadFavorites() -> [FavoriteAd] {
         guard let data = try? Data(contentsOf: fileURL) else { return [] }
         return (try? JSONDecoder().decode([FavoriteAd].self, from: data)) ?? []
     }
-
+    
     private func saveFavorites(_ favorites: [FavoriteAd]) {
         if let data = try? JSONEncoder().encode(favorites) {
             try? data.write(to: fileURL)
         }
     }
-
+    
     func isFavorite(id: String) -> Bool {
         loadFavorites().contains { $0.id == id }
     }
-
+    
     func toggleFavorite(id: String) {
         var favorites = loadFavorites()
         if let index = favorites.firstIndex(where: { $0.id == id }) {

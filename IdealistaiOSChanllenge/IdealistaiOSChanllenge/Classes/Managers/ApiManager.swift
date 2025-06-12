@@ -15,8 +15,9 @@ struct ApiManager: ApiManagerProtocol {
 
     func apiCall<T: Decodable>(for url: String) async throws -> T {
         guard let url = URL(string: url) else {
-            throw NSError(domain: "jsonError", code: 1, userInfo: [NSLocalizedDescriptionKey : "error error"])
-        }
+            throw NSError(domain: "jsonError",
+                          code: 1,
+                          userInfo: [NSLocalizedDescriptionKey : "error"])}
         let (data, _) = try await URLSession.shared.data(from: url)
         return try JSONDecoder().decode(T.self, from: data)
     }
