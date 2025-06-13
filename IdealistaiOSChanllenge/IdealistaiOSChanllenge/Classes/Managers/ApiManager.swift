@@ -6,6 +6,13 @@
 //
 import Foundation
 
+struct APIPaths {
+    static let adsLists = "https://idealista.github.io/ios-challenge/list.json"
+    static func adDetail(id: String) -> String {
+        return "https://idealista.github.io/ios-challenge/detail_\(id).json"
+    }
+}
+
 protocol ApiManagerProtocol {
     func apiCall<T: Decodable>(for url: String) async throws -> T
 }

@@ -22,8 +22,7 @@ final class AdsService: AdsServiceProtocol {
     }
     
     func fetchAdsList() async throws -> [AdList] {
-        let url = "https://idealista.github.io/ios-challenge/list.json"
-        let dtoList: [AdDTO] = try await apiManager.apiCall(for: url)
+        let dtoList: [AdDTO] = try await apiManager.apiCall(for: APIPaths.adsLists)
         return dtoList.map { dto in
             AdList(dto: dto)
         }

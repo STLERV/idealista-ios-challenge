@@ -16,10 +16,7 @@ final class AdDetailService: AdDetailServiceProtocol {
     }
 
     func fetchDetail(for id: String) async throws -> AdDetail {
-        let url = "https://idealista.github.io/ios-challenge/detail_\(id).json"
-        let dtoDetail: AdDetailDTO = try await apiManager.apiCall(for: url)
-     
+        let dtoDetail: AdDetailDTO = try await apiManager.apiCall(for: APIPaths.adDetail(id: id))
         return AdDetail(dto: dtoDetail)
-        }
-
+    }
 }
