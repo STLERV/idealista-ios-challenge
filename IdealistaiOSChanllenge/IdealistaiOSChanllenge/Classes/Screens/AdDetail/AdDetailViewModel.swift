@@ -10,10 +10,15 @@ import SwiftUI
 import CoreLocation
 
 final class AdDetailViewModel: ObservableObject {
+    
+    enum ViewEstate {
+        case loading
+        case success
+        case error(String)
+    }
     @Published var ad: AdDetail?
-    @Published var isLoading = false
-    @Published var error: Error?
     @Published var isFavorite: Bool = false
+    @Published var state: ViewEstate = .loading
 
     private let adId: String
     private let service: AdDetailServiceProtocol
@@ -25,13 +30,19 @@ final class AdDetailViewModel: ObservableObject {
 
     @MainActor
     func fetchAdDetail() async {
-        isLoading = true
-        defer { isLoading = false }
+        await MainActor.run {
+            state = .loading
+        }
         do {
-            let result = try await service.fetchDetail(for: adId)
-            self.ad = result
+            let detailAd = try await service.fetchDetail(for: adId)
+            self.ad = detailAd
+           await MainActor.run {
+                state = .success
+            }
         } catch {
-            self.error = error
+            await MainActor.run {
+                state = .error("Error")
+            }
         }
     }
 
@@ -47,14 +58,10 @@ final class AdDetailViewModel: ObservableObject {
     }
 
     func favoriteLabelText() -> String {
-        guard let ad else {
-            return "addFavourite".localized
-        }
-
+        guard let ad else { return "addFavourite".localized }
         let dateText = FavoritesManager.shared.favoritedDate(for: String(ad.id))
 
-        return isFavorite
-            ? String(format: "favoriteDate".localized, dateText ?? "unknown".localized)
+        return isFavorite ? String(format: "favoriteDate".localized, dateText ?? "unknown".localized)
             : "addFavourite".localized
     }
 }

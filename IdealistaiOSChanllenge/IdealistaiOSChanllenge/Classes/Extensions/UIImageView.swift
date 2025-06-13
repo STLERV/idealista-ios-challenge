@@ -9,6 +9,7 @@ import UIKit
 
 extension UIImageView {
     func loadImage(from url: URL) {
+        image = UIImage(systemName: "photo")
         Task {
             do {
                 let (data, _) = try await URLSession.shared.data(from: url)
@@ -17,8 +18,6 @@ extension UIImageView {
                         self.image = image
                     }
                 }
-            } catch {
-                print("Error loading image: \(error)")
             }
         }
     }

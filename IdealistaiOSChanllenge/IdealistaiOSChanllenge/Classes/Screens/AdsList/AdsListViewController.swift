@@ -10,6 +10,7 @@ import UIKit
 
 protocol AdsListViewControllerProtocol  {
     func displayAds(ads: [AdList])
+    func displayError(error: String)
 }
 
 class AdsListViewController: UIViewController {
@@ -46,6 +47,18 @@ extension AdsListViewController: AdsListViewControllerProtocol {
     func displayAds(ads: [AdList]) {
         DispatchQueue.main.async{
             self.tableView.reloadData()
+        }
+    }
+    
+    func displayError(error: String) {
+        DispatchQueue.main.async {
+            let alert = UIAlertController(title: "Error",
+                                          message: error,
+                                          preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Retry", style: .default) { _ in
+                self.presenter?.onViewDidLoad()
+            })
+            self.present(alert, animated: true, completion: nil)
         }
     }
 }

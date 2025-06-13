@@ -1,3 +1,9 @@
+//  AdDetailModel.swift
+//  IdealistaiOSChanllenge
+//
+//  Created by AnnaPersonalDev on 9/6/25.
+//
+
 import Foundation
 import CoreLocation
 

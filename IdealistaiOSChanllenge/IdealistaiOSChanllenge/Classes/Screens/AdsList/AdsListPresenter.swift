@@ -28,9 +28,13 @@ final class AdsListPresenter: AdsListPresenterProtocol {
             do {
                 let ads = try await interactor.fetchAds()
                 self.ads = ads
-                view?.displayAds(ads: ads)
+                await MainActor.run {
+                    view?.displayAds(ads: ads)
+                }
             } catch {
-               print("ssss")
+                await MainActor.run {
+                    view?.displayError(error: "error")
+                }
             }
         }
     }

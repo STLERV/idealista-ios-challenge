@@ -131,6 +131,7 @@
       }
     },
     "loadingAd" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
