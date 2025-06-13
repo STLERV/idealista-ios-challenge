@@ -25,7 +25,7 @@ class AdsListPresenterMock: AdsListPresenterProtocol {
         return mockAds.count
     }
 
-    func getAd(index: Int) -> AdList {
+    func getAd(index: Int) -> AdList? {
         getAdCount += 1
         adIndexRequested = index
         return mockAds[index]

@@ -50,7 +50,8 @@ final class AdsListsPresenterTests: XCTestCase {
 
     func testGetAd() {
         sut.ads = [AdList.mock]
-        XCTAssertEqual(sut.getAd(index: 0).id, AdList.mock.id)
+        let res = sut.getAd(index: 0)
+        XCTAssertEqual(res?.id, AdList.mock.id)
     }
 
     func testGetAdsCount() {

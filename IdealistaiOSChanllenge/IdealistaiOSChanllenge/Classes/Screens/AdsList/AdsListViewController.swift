@@ -16,7 +16,6 @@ protocol AdsListViewControllerProtocol  {
 class AdsListViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var label: UILabel!
     var presenter: AdsListPresenterProtocol?
     var delegate: AdsListCoordinatorProtocol?
     private let refreshControl = UIRefreshControl()
@@ -79,10 +78,6 @@ extension AdsListViewController: UITableViewDelegate, UITableViewDataSource {
                            forCellReuseIdentifier: AdTableViewCell.identifier)
     }
 
-    private func dequeueCell(for tableView: UITableView, indexPath: IndexPath, identifier: String) -> UITableViewCell {
-        return tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath)
-    }
-
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let rows = presenter?.getAdsCount() else {
             return 0
@@ -108,9 +103,8 @@ extension AdsListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        if let adID = presenter?.getAd(index: indexPath.row).id {
-            delegate?.showAdDetail(index: adID)
+        if let adID = presenter?.getAd(index: indexPath.row) {
+            delegate?.showAdDetail(index: adID.id)
         }
-        //error
     }
 }
