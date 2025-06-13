@@ -11,14 +11,14 @@ struct FavoriteAd: Codable, Identifiable, Equatable {
     let favoriteDate: String
 }
 
-protocol FavoritesManaging {
+protocol FavoritesManagerProtocol {
     func isFavorite(id: String) -> Bool
     func toggleFavorite(id: String)
     func favoritedDate(for id: String) -> String?
     func getAllFavorites() -> [FavoriteAd]
 }
 
-final class FavoritesManager: FavoritesManaging {
+final class FavoritesManager: FavoritesManagerProtocol {
     static let shared = FavoritesManager()
     private let filename = "favorites.json"
     

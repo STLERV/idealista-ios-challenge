@@ -19,8 +19,8 @@ class AdsListViewController: UIViewController {
     var presenter: AdsListPresenterProtocol?
     var delegate: AdsListCoordinatorProtocol?
     private let refreshControl = UIRefreshControl()
-    
-    public convenience init(presenter: AdsListPresenter) {
+
+    public convenience init(presenter: AdsListPresenterProtocol) {
         self.init(nibName: "AdsListViewController", bundle: nil)
         self.presenter = presenter
     }
@@ -29,6 +29,7 @@ class AdsListViewController: UIViewController {
         super.viewDidLoad()
         viewDidLoadSetUp()
     }
+
     func viewDidLoadSetUp() {
         presenter?.onViewDidLoad()
         configureTableView()

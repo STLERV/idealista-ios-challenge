@@ -22,6 +22,7 @@ class AdTableViewCell: UITableViewCell {
         selectionStyle = .none
         setCellStyle()
     }
+
     func setCell(adress: String,
                  image: URL,
                  price: Double,

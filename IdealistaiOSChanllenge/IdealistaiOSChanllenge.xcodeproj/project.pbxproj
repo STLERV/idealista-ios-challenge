@@ -61,11 +61,6 @@
 			path = IdealistaiOSChanllengeTests;
 			sourceTree = "<group>";
 		};
-		EEE0207D2DF706830026F8E0 /* IdealistaiOSChanllengeUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = IdealistaiOSChanllengeUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +93,6 @@
 			children = (
 				EEE0205C2DF706810026F8E0 /* IdealistaiOSChanllenge */,
 				EEE020732DF706830026F8E0 /* IdealistaiOSChanllengeTests */,
-				EEE0207D2DF706830026F8E0 /* IdealistaiOSChanllengeUITests */,
 				EEE0205B2DF706810026F8E0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -173,9 +167,6 @@
 			);
 			dependencies = (
 				EEE0207C2DF706830026F8E0 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				EEE0207D2DF706830026F8E0 /* IdealistaiOSChanllengeUITests */,
 			);
 			name = IdealistaiOSChanllengeUITests;
 			packageProductDependencies = (
