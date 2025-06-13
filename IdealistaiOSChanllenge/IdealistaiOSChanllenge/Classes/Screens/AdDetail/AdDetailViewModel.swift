@@ -11,14 +11,14 @@ import CoreLocation
 
 final class AdDetailViewModel: ObservableObject {
     
-    enum ViewEstate {
+    enum ViewState {
         case loading
         case success
         case error(String)
     }
     @Published var ad: AdDetail?
     @Published var isFavorite: Bool = false
-    @Published var state: ViewEstate = .loading
+    @Published var state: ViewState = .loading
 
     private let adId: String
     private let service: AdDetailServiceProtocol
